@@ -54,3 +54,100 @@ main section.banner h1{
     text-shadow: 0px 4px 4px black;/*sombra no texto*/
     padding: 100px;
 }
+
+main section.receitas-principais .container{
+    min-height: 600px; /*ter no minimo essa quantidade de pixel*/
+    width: 1200px;
+    margin: 0 auto;/*espaçamento automatico*/
+
+}
+
+main section.receitas-principais h2{
+    color: #FFA000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: lowercase;
+}
+
+.lista-receitas{
+    display: flex;/*ativar o flexbox*/
+    justify-content: space-evenly;/*espaçamento igual ao redor dos elementos (horizontal)*/
+    align-items: flex-start;/*todos os elementos alinhados ao topo*/
+}
+
+.lista-receitas article{
+    /*border: 1px solid orange;/*bonda somente para teste*/
+    width: 345px;/*largura do article*/
+    text-align: center; /*centralizando tudo no article*/
+}
+
+.lista-receitas article .thumb{
+    width: 100%; /* imagem vai ocupar 100% de largura do article*/
+    height: 280px;/*altura do thumb*/
+    background-color: orange; /*cor de fundo somente para teste*/
+    background-size: cover; /*imagem cobre todo elemento*/
+    background-repeat: no-repeat; /*imagem nao se repete*/
+    background-position: center;
+}
+
+.lista-receitas article h3{
+    font-size: 26px;
+}
+
+.lista-receitas article a{
+    background-color: green; /*cor de fundo*/
+    color: #fff; /*cor do texto*/ 
+    font-size: 24px; /*tamanho da letra*/
+    font-weight: bold; /*grossura da letra*/
+    padding: 5px 25px; /*espaçamento interno do botão*/
+    text-decoration: none; /*tirar sublinhado do link*/
+}
+
+section.banner-secundario {
+    background-image: url(../imagens/banner-vovo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section.banner-secundario .container {
+    min-height: 600px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* itens em coluna */
+    justify-content: center; /* alinhamento centralizado na vertical */
+}
+
+section.banner-secundario .container h2 {
+    font-size: 62px;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.banner-secundario .container p {
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 450px;
+}
+
+footer {
+    background-color: #FFC107;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+footer .container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer p {
+    padding: 0 15px;
+}
